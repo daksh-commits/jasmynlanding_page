@@ -50,13 +50,13 @@
 
 /* LIGHT MODE - Pastel Glassmorphism Theme */
 :root {
-  /* Brand Colors */
-  --brand-indigo: 239 84% 67%;    /* #6366F1 */
-  --brand-periwinkle: 230 96% 82%; /* #A5B4FC */
-  --brand-navy: 222 47% 11%;       /* #0F172A */
-  --brand-slate: 215 16% 47%;      /* #64748B */
-  --brand-lavender: 268 100% 95%;  /* #F3E8FF */
-  --brand-cyan: 199 95% 94%;       /* #E0F2FE */
+  /* Brand Colors - Softened & Aesthetic */
+  --brand-indigo: 239 70% 72%;    /* Softer Indigo */
+  --brand-periwinkle: 230 85% 88%; /* Softer Periwinkle */
+  --brand-navy: 222 30% 18%;       /* Softer Navy */
+  --brand-slate: 215 15% 55%;      /* Softer Slate */
+  --brand-lavender: 268 60% 97%;   /* Very pale Lavender */
+  --brand-cyan: 199 60% 97%;       /* Very pale Cyan */
 
   --background: 0 0% 100%;
   --foreground: var(--brand-navy);
@@ -73,7 +73,7 @@
   --secondary: var(--brand-lavender);
   --secondary-foreground: var(--brand-indigo);
 
-  --muted: 210 40% 96.1%;
+  --muted: 210 20% 98%;
   --muted-foreground: var(--brand-slate);
 
   --accent: var(--brand-cyan);

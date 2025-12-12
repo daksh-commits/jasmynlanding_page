@@ -26,19 +26,19 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white selection:bg-indigo-100 text-slate-900 font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-[#FAFAFC] selection:bg-indigo-100 text-slate-900 font-sans overflow-x-hidden">
       {/* Ambient Background Gradients */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[50vw] h-[50vh] bg-purple-100/60 blur-[120px] rounded-full translate-x-1/4 -translate-y-1/4"></div>
-        <div className="absolute top-1/2 left-0 w-[40vw] h-[40vh] bg-blue-100/60 blur-[100px] rounded-full -translate-x-1/4 translate-y-1/4"></div>
-        <div className="absolute bottom-0 right-1/4 w-[30vw] h-[30vh] bg-indigo-50/60 blur-[80px] rounded-full"></div>
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vh] bg-purple-200/30 blur-[140px] rounded-full mix-blend-multiply"></div>
+        <div className="absolute top-[20%] left-[-10%] w-[50vw] h-[50vh] bg-blue-200/30 blur-[140px] rounded-full mix-blend-multiply"></div>
+        <div className="absolute bottom-[-10%] right-[10%] w-[40vw] h-[40vh] bg-indigo-200/30 blur-[140px] rounded-full mix-blend-multiply"></div>
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
-        <div className="max-w-7xl mx-auto glass-card rounded-full px-6 py-3 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6">
+        <div className="max-w-7xl mx-auto glass-card rounded-full px-8 py-4 flex items-center justify-between bg-white/60 border-white/40 shadow-sm backdrop-blur-md">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold">J</div>
+            <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold shadow-indigo-200 shadow-lg">J</div>
             <span className="font-bold text-xl tracking-tight text-slate-900">JASMYN</span>
           </div>
           
@@ -65,24 +65,24 @@ export default function Home() {
             className="space-y-8"
           >
             <motion.div variants={fadeIn}>
-              <Badge variant="secondary" className="px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-700 font-medium border-indigo-100 mb-6">
-                <Sparkles className="w-3.5 h-3.5 mr-2 inline-block" />
+              <Badge variant="secondary" className="px-4 py-2 rounded-full bg-white/50 text-indigo-600 font-medium border border-indigo-100/50 mb-8 shadow-sm backdrop-blur-sm">
+                <Sparkles className="w-3.5 h-3.5 mr-2 inline-block text-indigo-400" />
                 The Future of Work is Here
               </Badge>
-              <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-slate-900 mb-6">
-                The AI employee your business <span className="text-indigo-600">always wished it had.</span>
+              <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-slate-800 mb-6">
+                The AI employee your business <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">always wished it had.</span>
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
+              <p className="text-xl text-slate-500 leading-relaxed max-w-lg font-light">
                 Jasmyn is not a tool. She is not an assistant. She is an AI teammate who handles calls, bookings, and leads instantly.
               </p>
             </motion.div>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="h-14 px-8 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-semibold shadow-xl shadow-indigo-200 hover:shadow-indigo-300 transition-all transform hover:-translate-y-0.5">
+              <Button size="lg" className="h-14 px-8 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white text-lg font-medium shadow-xl shadow-indigo-200/50 hover:shadow-indigo-300/50 transition-all transform hover:-translate-y-0.5">
                 Meet Jasmyn
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="h-14 px-8 rounded-full border-2 border-slate-200 hover:border-indigo-200 hover:bg-indigo-50/50 text-slate-700 text-lg font-medium">
+              <Button size="lg" variant="outline" className="h-14 px-8 rounded-full border border-slate-200 hover:border-indigo-200 hover:bg-white/50 text-slate-600 text-lg font-medium bg-white/30 backdrop-blur-sm">
                 <Play className="mr-2 w-5 h-5 fill-current" />
                 Watch Demo
               </Button>
