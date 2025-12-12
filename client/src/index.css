@@ -43,7 +43,8 @@
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
 
-  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Newsreader', serif;
   
   --radius: 1.5rem; /* 24px as requested */
 }
@@ -149,5 +150,10 @@
   
   .text-gradient {
     @apply bg-clip-text text-transparent bg-linear-to-r from-indigo-500 to-purple-600;
+  }
+
+  .font-serif-italic {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
   }
 }
