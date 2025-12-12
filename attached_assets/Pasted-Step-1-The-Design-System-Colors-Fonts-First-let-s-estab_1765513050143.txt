@@ -1,0 +1,102 @@
+Step 1: The Design System (Colors & Fonts)
+First, let's establish the "Look and Feel" based on your screenshot. The screenshot uses a style called "Glassmorphism" with soft pastel gradients.
+
+Hex Codes derived from the image:
+
+Primary Action (Buttons/Accents): #6366F1 (Soft Indigo/Violet)
+
+Secondary Accent: #A5B4FC (Periwinkle)
+
+Background: White #FFFFFF fading into very soft Lavender #F3E8FF and pale Blue #E0F2FE.
+
+Text: Dark Navy #0F172A (Headings) and Slate Grey #64748B (Body).
+
+Font: Plus Jakarta Sans or Inter (Round, modern, clean).
+
+Step 2: The Master Prompt (Copy & Paste this first)
+Copy this into the Lovable chat:
+
+I want to build a high-converting SaaS landing page for an AI software called "Jasmyn."
+
+Design Style Reference: Please mimic the aesthetic of a modern, ethereal SaaS platform.
+
+Vibe: Calm, futuristic, warm, hyper-efficient, and airy.
+
+Backgrounds: Use a white background with very soft, dreamy mesh gradients in the corners (pale lavender #F3E8FF and soft cyan #E0F2FE).
+
+Components: Use "Glassmorphism" effects (white cards with high transparency, blur, and soft white borders) for content blocks.
+
+Typography: Use "Plus Jakarta Sans" or "Inter". Round, clean, and professional.
+
+Shapes: Use highly rounded corners (border-radius: 24px) for buttons and cards.
+
+Primary Color: Soft Indigo/Violet (#6366F1) for main CTA buttons.
+
+Page Structure & Content:
+
+Navbar: Logo "JASMYN" (clean, minimal), Links: Features, Persona, Pricing, Login. CTA Button: "Hire Jasmyn".
+
+Hero Section:
+
+Headline: "The AI employee your business always wished it had."
+
+Subheadline: "Jasmyn is not a tool. She is not an assistant. She is an AI teammate who handles calls, bookings, and leads instantly."
+
+Visual: In the center, place a floating, glass-effect dashboard UI mock-up that looks high-tech but clean.
+
+CTA: "Meet Jasmyn" (Primary button) and "Watch Demo" (Secondary, outline style).
+
+Value Proposition (Grid Layout):
+
+Title: "More than software. A presence."
+
+Create a 3-column grid with these cards:
+
+Card 1 (Reliability): Icon: Shield/Check. Text: "She shows up instantly. No breaks. No moods. Always polite."
+
+Card 2 (Competence): Icon: Brain/Sparkle. Text: "She never says 'loading.' She speaks clearly, helps instantly, and explains simply."
+
+Card 3 (Scale): Icon: Chart/Growth. Text: "Businesses feel bigger when she’s around. She handles 70+ calls a day effortlessly."
+
+The "Emotional Positioning" Section (Bento Grid Style):
+
+Headline: "This is what customers feel:"
+
+Use a masonry/bento grid layout for these quotes in large, elegant typography:
+
+"She handled it."
+
+"I can trust her."
+
+"She makes my business feel bigger."
+
+"My customers are talking to someone who understands them."
+
+Feature Showcase (Alternating Layout):
+
+Left Image / Right Text: Title: "Learning & Evolving." Text: "You don't create features; you teach Jasmyn skills. She is learning to book appointments, qualify leads, and handle sales questions."
+
+Right Image / Left Text: Title: "Always Professional." Text: "Zero ego. No drama. Jasmyn never uses slang, never gets emotional, and never misses a detail."
+
+Footer: Simple, clean, with links and a subtle "Powered by [Your Company]" tag.
+
+Step 3: Refinement Prompts (Use these to tweak the result)
+Once Lovable generates the first version, it likely won't be perfect. Use these prompts to refine specific areas based on your persona document.
+
+To fix the Colors/Vibe (if it looks too dark or generic):
+
+"Make the design more 'airy.' Increase the whitespace between sections. Make the background gradients softer and more pastel (lavender and light blue). Ensure the cards have a white background with 0.5 opacity and a backdrop-blur effect (glassmorphism)."
+
+To add the "Jasmyn" Persona details (The Visuals):
+
+"For the images/placeholders on the site, I want to convey the character of Jasmyn. She is a 'Futuristic Receptionist.' Please add an 'About Jasmyn' section with a clean layout. Content for this section:
+
+Visual Style: White futuristic uniform, soft purple LED lines, short pink hair.
+
+Vibe: Calm, intelligent, soft-spoken.
+
+Copy: 'If Siri and Tesla AutoPilot had a daughter who worked in customer support… That’s Jasmyn.'"
+
+To fix the Typography (Make it look like the screenshot):
+
+"Change the font to 'Plus Jakarta Sans'. Make the main Headings bold and dark navy (#0F172A). Make the body text a readable slate grey (#64748B). Ensure the buttons are pill-shaped (fully rounded)." ""Use the color palette, button styling, and shadow depth from this uploaded image, but apply it to the content structure I gave you in the prompt."""
