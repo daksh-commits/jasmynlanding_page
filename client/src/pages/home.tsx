@@ -48,7 +48,7 @@ export default function Home() {
             <a href="#login" className="hover:text-indigo-600 transition-colors">Login</a>
           </div>
 
-          <Button className="rounded-full bg-indigo-500 hover:bg-indigo-600 text-white shadow-lg shadow-indigo-200/50 px-6 font-medium">
+          <Button onClick={() => window.dispatchEvent(new CustomEvent('open-waitlist'))} className="rounded-full bg-indigo-500 hover:bg-indigo-600 text-white shadow-lg shadow-indigo-200/50 px-6 font-medium">
             Hire Jasmyn
           </Button>
         </div>
@@ -79,7 +79,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="h-14 px-8 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white text-lg font-medium shadow-xl shadow-indigo-200/50 hover:shadow-indigo-300/50 transition-all transform hover:-translate-y-0.5">
+              <Button onClick={() => window.dispatchEvent(new CustomEvent('open-waitlist'))} size="lg" className="h-14 px-8 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white text-lg font-medium shadow-xl shadow-indigo-200/50 hover:shadow-indigo-300/50 transition-all transform hover:-translate-y-0.5">
                 Let Me Work For You
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -424,7 +424,7 @@ export default function Home() {
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 max-w-2xl mx-auto">
              <p className="text-2xl font-bold text-slate-900 mb-2">I’ll take care of your calls.</p>
              <p className="text-xl text-slate-600 mb-8">You take care of your customers.</p>
-             <Button size="lg" className="w-full h-16 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-bold shadow-xl shadow-indigo-200/50">
+             <Button onClick={() => window.dispatchEvent(new CustomEvent('open-waitlist'))} size="lg" className="w-full h-16 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-bold shadow-xl shadow-indigo-200/50">
                Join My Waitlist
              </Button>
           </div>
@@ -441,7 +441,7 @@ export default function Home() {
           
           <div className="text-center">
              <p className="text-slate-900 font-bold mb-2">Ready when you are.</p>
-             <Button variant="link" className="text-indigo-600 p-0 h-auto font-medium">Get Early Access</Button>
+             <Button onClick={() => window.dispatchEvent(new CustomEvent('open-waitlist'))} variant="link" className="text-indigo-600 p-0 h-auto font-medium">Get Early Access</Button>
           </div>
 
           <div className="text-sm text-slate-400">
