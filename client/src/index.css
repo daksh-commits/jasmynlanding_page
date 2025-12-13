@@ -41,69 +41,43 @@
   --color-ring: hsl(var(--ring));
 }
 
-/* LIGHT MODE - Electric Purple/Indigo Theme */
+/* LIGHT MODE - Flat High-Contrast Theme */
 :root {
   --radius: 0.75rem;
 
-  /* #503AF7 is approx HSL: 247 91% 60% */
-  
-  --background: 247 30% 99%; /* Very subtle lavender/white tint */
-  --foreground: 245 40% 15%; /* Dark indigo text - Softer than black */
+  --background: 0 0% 100%; /* Pure White */
+  --foreground: 0 0% 10%; /* Nearly Black */
 
   --card: 0 0% 100%;
-  --card-foreground: 245 40% 15%;
+  --card-foreground: 0 0% 10%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 245 40% 15%;
+  --popover-foreground: 0 0% 10%;
 
-  --primary: 247 91% 60%; /* #503AF7 - The User's Requested Color */
+  --primary: 247 91% 60%; /* #503AF7 */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 247 20% 96%; /* Very light purple grey */
-  --secondary-foreground: 247 91% 60%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 10%;
 
-  --muted: 247 20% 96%;
-  --muted-foreground: 245 20% 45%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
 
-  --accent: 247 20% 96%;
+  --accent: 0 0% 96%;
   --accent-foreground: 247 91% 60%;
 
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 98%;
 
-  --border: 247 20% 92%;
-  --input: 247 20% 92%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
   --ring: 247 91% 60%;
 }
 
 .dark {
-  --background: 247 40% 5%;
-  --foreground: 247 10% 98%;
-
-  --card: 247 40% 5%;
-  --card-foreground: 247 10% 98%;
-
-  --popover: 247 40% 5%;
-  --popover-foreground: 247 10% 98%;
-
-  --primary: 247 91% 60%;
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 247 30% 15%;
-  --secondary-foreground: 247 10% 98%;
-
-  --muted: 247 30% 15%;
-  --muted-foreground: 247 10% 65%;
-
-  --accent: 247 30% 15%;
-  --accent-foreground: 247 10% 98%;
-
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
-
-  --border: 247 30% 15%;
-  --input: 247 30% 15%;
-  --ring: 247 91% 60%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  /* ... Keep dark mode simple for now, prioritizing light mode match */
 }
 
 @layer base {
@@ -114,6 +88,6 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-primary;
+    @apply font-serif text-gray-900; /* Force black headings unless overridden */
   }
 }

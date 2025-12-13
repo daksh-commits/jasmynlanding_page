@@ -46,12 +46,6 @@ const plans = [
 export function Pricing() {
   return (
     <section id="pricing" className="py-24 bg-[#503AF7] text-white relative overflow-hidden">
-      {/* Background decoration - Aesthetic gradients */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-purple-500/20 rounded-full blur-[100px]" />
-        <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] bg-cyan-500/20 rounded-full blur-[100px]" />
-      </div>
-
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="bg-white/10 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block backdrop-blur-md border border-white/10">
@@ -72,7 +66,7 @@ export function Pricing() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className={`relative bg-white text-[#1a1a2e] rounded-3xl p-8 ${
                 plan.recommended 
-                  ? "shadow-2xl shadow-indigo-900/20 scale-105 border-4 border-white z-10" 
+                  ? "shadow-2xl shadow-black/20 scale-105 border-4 border-white z-10" 
                   : "opacity-95 hover:opacity-100 hover:scale-[1.02] transition-all"
               }`}
             >
@@ -98,7 +92,7 @@ export function Pricing() {
               <Button 
                 className={`w-full rounded-full py-6 text-base ${
                   plan.recommended 
-                    ? "bg-[#503AF7] text-white hover:bg-[#4029d6] shadow-lg shadow-indigo-500/30" 
+                    ? "bg-[#503AF7] text-white hover:bg-[#4029d6] shadow-none" 
                     : "bg-[#1a1a2e] text-white hover:bg-black"
                 }`}
               >
