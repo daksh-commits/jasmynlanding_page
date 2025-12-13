@@ -8,24 +8,24 @@ import {
 
 const features = [
   {
-    icon: BarChart3,
-    title: "Budgeting and report tracking",
-    description: "Keep track of your financial progress with detailed reports and budgeting tools designed for clarity."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Secure Transactions",
-    description: "Enterprise-grade encryption ensures your data and money are always protected."
+    icon: Zap,
+    title: "Answer calls instantly",
+    description: "I pick up in one second. No hold times, no waiting, just immediate service."
   },
   {
     icon: Globe2,
-    title: "Global Connectivity",
-    description: "Access your accounts and manage finances from anywhere in the world without friction."
+    title: "Talk naturally",
+    description: "Yes, people think I’m real. I understand context and speak with a natural tone."
   },
   {
-    icon: Zap,
-    title: "Instant Processing",
-    description: "Real-time payment processing means you never have to wait for your money to move."
+    icon: BarChart3,
+    title: "Book appointments",
+    description: "I manage your calendar directly, booking slots while you focus on work."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Qualify serious leads",
+    description: "I ask the right questions to ensure you only speak to qualified potential customers."
   }
 ];
 
@@ -34,11 +34,15 @@ export function Features() {
     <section id="features" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">Services</span>
+          <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">The Problem</span>
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-            Make payment easy, simplify <br />
-            your <span className="italic text-primary">finance</span>.
+            You lose more customers <br />
+            than <span className="italic text-primary">you think</span>.
           </h2>
+          <p className="text-gray-600 text-lg">
+            Not because your service is bad… but because nobody answered the phone in time.
+            People don’t wait. They call the next business. I can fix that.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

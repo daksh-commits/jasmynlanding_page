@@ -13,34 +13,35 @@ export function Hero() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block py-1 px-4 rounded-full bg-gray-50 text-gray-900 text-xs font-bold uppercase tracking-wider mb-6 border border-gray-100 flex items-center w-fit mx-auto gap-2">
-            <span className="text-[#503AF7]">★</span> FROM STRATEGY TO SUCCESS
+            <span className="text-[#503AF7]">★</span> JASMYN POV VERSION
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-gray-900 leading-[1.1] mb-6 tracking-tight">
-            Build and <span className="italic font-serif">Growth</span> with <br className="hidden md:block" />
-            Scalable Tools
+            Hi, I’m <span className="italic font-serif">Jasmyn.</span> <br className="hidden md:block" />
+            Your new AI receptionist.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed font-sans">
-            Easily adapt to changes and scale your operations with our flexible infrastructure,
-            designed to support your business growth.
+            I pick up every call, every time. I don’t get tired. I don’t miss calls. 
+            I don’t forget follow-ups. I just do my job… perfectly.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button size="lg" className="rounded-full px-8 h-12 text-base bg-gray-900 hover:bg-gray-800 text-white shadow-none transition-all">
-              Get Started
+              Let Me Work For You
             </Button>
             <Button size="lg" variant="ghost" className="rounded-full px-8 h-12 text-base text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all">
-              Learn More
+              <PlayCircle className="mr-2 h-4 w-4" />
+              Listen to Me in Action
             </Button>
           </div>
           
           <div className="flex justify-center gap-16 mb-20">
              <div className="flex items-center gap-4">
-               <span className="text-4xl font-serif text-gray-900">80%</span>
-               <span className="text-sm text-gray-500 text-left leading-tight">Reduction in<br/>reporting time</span>
+               <span className="text-4xl font-serif text-gray-900">0</span>
+               <span className="text-sm text-gray-500 text-left leading-tight">Missed calls<br/>guaranteed</span>
              </div>
              <div className="flex items-center gap-4">
-               <span className="text-4xl font-serif text-gray-900">99</span>
-               <span className="text-sm text-gray-500 text-left leading-tight">Increase in<br/>billing hours</span>
+               <span className="text-4xl font-serif text-gray-900">24/7</span>
+               <span className="text-sm text-gray-500 text-left leading-tight">Availability<br/>every day</span>
              </div>
           </div>
         </motion.div>
@@ -55,7 +56,7 @@ export function Hero() {
           <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-gray-200/50 border border-gray-100 bg-white">
             <img 
               src={heroImage} 
-              alt="Catalis Dashboard Interface" 
+              alt="Jasmyn AI Interface" 
               className="w-full h-auto"
             />
           </div>

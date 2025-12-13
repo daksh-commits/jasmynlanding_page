@@ -17,16 +17,16 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
               <div className="p-4">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-2">80%</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Customer Growth</div>
+                <div className="text-xl font-serif font-bold text-gray-900 mb-2">Your Team</div>
+                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Gets More Time</div>
               </div>
               <div className="p-4">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-2">$70k</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Money Saved</div>
+                <div className="text-xl font-serif font-bold text-gray-900 mb-2">Your Customers</div>
+                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Get Faster Service</div>
               </div>
               <div className="p-4">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-2">99%</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Customer Satisfaction</div>
+                <div className="text-xl font-serif font-bold text-gray-900 mb-2">Your Business</div>
+                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Gets More Revenue</div>
               </div>
             </div>
           </div>
@@ -38,19 +38,19 @@ export default function Home() {
         <section className="py-24 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
-              <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">In-Depth</span>
+              <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">Why I'm Different</span>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900">
-                Empowering and strengthening <br />
-                your <span className="italic text-primary">financial success</span>
+                I’m not a chatbot. <br />
+                I’m an <span className="italic text-primary">AI worker</span>.
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {[
-                { title: "Intuitive user interface", metric: "65%", label: "Faster Workflow" },
-                { title: "Automated processes", metric: "45%", label: "Efficiency Boost" },
-                { title: "Secure transactions", metric: "$1.2M", label: "Protected Assets" },
-                { title: "Advanced security features", metric: "99.9%", label: "Uptime Guaranteed" }
+                { title: "I learn your business", metric: "100%", label: "Adaptability" },
+                { title: "I speak your tone", metric: "Human", label: "Natural Voice" },
+                { title: "I follow instructions", metric: "Precise", label: "Protocol Adherence" },
+                { title: "I improve over time", metric: "∞", label: "Continuous Learning" }
               ].map((item, idx) => (
                 <motion.div 
                   key={idx}
@@ -83,17 +83,17 @@ export default function Home() {
         <section className="py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
-              <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">Testimonials</span>
+              <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">Social Proof</span>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900">
-                What our clients are <span className="italic text-primary">saying</span>
+                Real results from <span className="italic text-primary">real businesses</span>
               </h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: "Sarah Johnson", role: "CEO, TechStart", quote: "Catalis transformed how we manage our company finances. The insights are invaluable." },
-                { name: "Michael Chen", role: "Founder, GrowthIo", quote: "The best financial tool we've used. Simple, elegant, and incredibly powerful features." },
-                { name: "Jessica Williams", role: "Director, FutureCorp", quote: "Security was our main concern, and Catalis delivered beyond our expectations." }
+                { name: "Med-Spa Owner", role: "Early Adopter", quote: "She booked 22 appointments for us this week. I didn't even know she was AI." },
+                { name: "Local Service Pro", role: "Beta User", quote: "We haven’t missed a call in months. It's like having a receptionist who never sleeps." },
+                { name: "Agency Founder", role: "Partner", quote: "I can white-label this and sell it to my clients? This is a game changer." }
               ].map((t, i) => (
                 <div key={i} className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                    <div className="mb-6 text-primary">
@@ -117,20 +117,18 @@ export default function Home() {
 
         {/* CTA Bottom */}
         <section className="py-24 bg-gradient-to-br from-primary to-blue-900 text-white relative overflow-hidden">
+           {/* Background decoration */}
            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-400/20 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
            
            <div className="container mx-auto px-4 relative z-10 text-center">
-             <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8">Ready to start your journey?</h2>
+             <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8">I’m almost ready for my first official day.</h2>
              <p className="text-blue-100 max-w-2xl mx-auto mb-10 text-lg">
-               Join thousands of businesses that trust Catalis for their financial growth.
+               Be one of the first 50 businesses to hire me. I’ll take care of your calls. You take care of your customers.
              </p>
              <div className="flex flex-col sm:flex-row justify-center gap-4">
                <button className="bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
-                 Get Started Now
-               </button>
-               <button className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-colors">
-                 Contact Sales
+                 Join My Waitlist
                </button>
              </div>
            </div>

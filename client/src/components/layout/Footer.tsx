@@ -6,11 +6,11 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="text-4xl font-serif font-bold text-primary mb-6 block">
-              Catalis
+            <Link href="/">
+              <a className="text-4xl font-serif font-bold text-primary mb-6 block">Jasmyn AI</a>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Empowering financial freedom through innovative technology and user-centric design.
+              Ready when you are. The AI receptionist that never sleeps.
             </p>
           </div>
 
@@ -18,9 +18,9 @@ export function Footer() {
             <h4 className="font-bold text-gray-900 mb-6">Links</h4>
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="#" className="hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">About</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Capabilities</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Waitlist</a></li>
             </ul>
           </div>
 
@@ -29,14 +29,13 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold text-gray-900 mb-6">Subscribe</h4>
+            <h4 className="font-bold text-gray-900 mb-6">Get Early Access</h4>
             <p className="text-sm text-gray-500 mb-4">
-              Join our newsletter to stay up to date on features and releases.
+              Join the future of business automation.
             </p>
             <div className="flex gap-2">
               <input 
@@ -53,10 +52,9 @@ export function Footer() {
 
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-gray-400 mb-4 md:mb-0">
-            © 2025 Catalis Inc. All rights reserved.
+            © 2025 Jasmyn AI. All rights reserved.
           </p>
           <div className="flex gap-6">
-            {/* Social icons placeholders */}
             <div className="w-5 h-5 bg-gray-200 rounded-full hover:bg-primary cursor-pointer transition-colors" />
             <div className="w-5 h-5 bg-gray-200 rounded-full hover:bg-primary cursor-pointer transition-colors" />
             <div className="w-5 h-5 bg-gray-200 rounded-full hover:bg-primary cursor-pointer transition-colors" />

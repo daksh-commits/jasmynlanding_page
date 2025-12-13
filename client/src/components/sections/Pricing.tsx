@@ -4,40 +4,41 @@ import { Button } from "@/components/ui/button";
 
 const plans = [
   {
-    name: "Basic Plan",
-    price: "$50.00",
-    period: "/month",
+    name: "Local Businesses",
+    price: "Service",
+    period: "",
     features: [
-      "Basic financial tracking",
-      "Up to 5 transactions/day",
-      "Email support",
-      "Mobile app access"
+      "Med-spas",
+      "Home services",
+      "Salons",
+      "Dental clinics",
+      "HVAC & Plumbers"
     ],
     recommended: false
   },
   {
-    name: "Grand Plan",
-    price: "$90.00",
-    period: "/month",
+    name: "Sales Pros",
+    price: "Sales",
+    period: "",
     features: [
-      "Advanced reporting",
-      "Unlimited transactions",
-      "Priority 24/7 support",
-      "Dedicated account manager",
-      "API access"
+      "Realtors",
+      "Solar agents",
+      "Insurance professionals",
+      "Lead qualification",
+      "Appointment setting"
     ],
     recommended: true
   },
   {
-    name: "Gold Plan",
-    price: "$150.00",
-    period: "/month",
+    name: "Agencies",
+    price: "White Label",
+    period: "",
     features: [
-      "Custom solutions",
-      "White-label options",
-      "Enterprise security",
-      "On-premise deployment",
-      "Unlimited users"
+      "Your logo & branding",
+      "Your pricing",
+      "No development cost",
+      "No technical setup",
+      "Plug & Play"
     ],
     recommended: false
   }
@@ -49,10 +50,10 @@ export function Pricing() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="bg-white/10 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block backdrop-blur-md border border-white/10">
-            Pricing
+            Who I Work With
           </span>
           <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
-            Simple, <span className="italic opacity-80">transparent</span> pricing
+            I do my best work for <span className="italic opacity-80">busy pros</span>
           </h2>
         </div>
 
@@ -96,7 +97,7 @@ export function Pricing() {
                     : "bg-[#1a1a2e] text-white hover:bg-black"
                 }`}
               >
-                Choose Plan
+                Let Me Work For You
               </Button>
             </motion.div>
           ))}
