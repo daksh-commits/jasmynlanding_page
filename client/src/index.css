@@ -88,6 +88,11 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-gray-900 -tracking-[0.03em]; /* Force black headings unless overridden */
+    @apply font-serif text-gray-900 -tracking-[0.05em]; /* Tighten non-italic headings */
+  }
+  
+  h1 .italic, h2 .italic, h3 .italic, h4 .italic, h5 .italic, h6 .italic,
+  h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    @apply -tracking-[0.01em]; /* Keep italics more open/standard */
   }
 }
