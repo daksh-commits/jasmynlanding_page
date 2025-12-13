@@ -36,16 +36,41 @@ export default function Home() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6">
         <div className="max-w-7xl mx-auto glass-card rounded-full px-8 py-4 flex items-center justify-between bg-white/60 border-white/40 shadow-sm backdrop-blur-md">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold shadow-indigo-200 shadow-lg">J</div>
-            <span className="font-bold text-xl tracking-tight text-slate-900">JASMYN</span>
+          <div className="flex items-center">
+            <img src="/jasmyn web logo.png" alt="Jasmyn Logo" className="h-10 w-auto object-contain" />
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-            <a href="#problem" className="hover:text-indigo-600 transition-colors">The Problem</a>
-            <a href="#features" className="hover:text-indigo-600 transition-colors">Capabilities</a>
-            <a href="#pricing" className="hover:text-indigo-600 transition-colors">Pricing</a>
-            <a href="#login" className="hover:text-indigo-600 transition-colors">Login</a>
+            <a 
+              href="#problem" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('problem')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              className="hover:text-indigo-600 transition-colors cursor-pointer"
+            >
+              The Problem
+            </a>
+            <a 
+              href="#features" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              className="hover:text-indigo-600 transition-colors cursor-pointer"
+            >
+              Capabilities
+            </a>
+            <a 
+              href="#how-it-works" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              className="hover:text-indigo-600 transition-colors cursor-pointer"
+            >
+              How It Works
+            </a>
           </div>
 
           <Button onClick={() => window.dispatchEvent(new CustomEvent('open-waitlist'))} className="rounded-full bg-indigo-500 hover:bg-indigo-600 text-white shadow-lg shadow-indigo-200/50 px-6 font-medium">
@@ -137,15 +162,15 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <Badge variant="outline" className="border-red-200 text-red-500 bg-red-50/50 px-4 py-1 mb-4 rounded-full">The Problem</Badge>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-slate-900">
-            You lose more customers <span className="text-red-500 font-serif-italic font-normal">than you think.</span>
+            You lose more customers <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 font-serif-italic font-normal">than you think.</span>
           </h2>
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light">
             Not because your service is bad… but because nobody answered the phone in time.
             <br />
-            <span className="font-medium text-slate-900 mt-4 block">People don’t wait. They call the next business.</span>
+            <span className="font-medium text-slate-900 mt-4 block">People don't wait. They call the next business.</span>
           </p>
           <div className="pt-8">
-            <p className="text-3xl font-serif-italic text-indigo-600">I can fix that.</p>
+            <p className="text-4xl md:text-5xl font-serif-italic text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">I can fix that.</p>
           </div>
         </div>
       </section>
@@ -267,11 +292,11 @@ export default function Home() {
                   <Users className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-white">Agencies</h3>
-                <p className="text-indigo-100 leading-relaxed">
+                <p className="text-black leading-relaxed text-lg font-bold" style={{ fontWeight: 700 }}>
                   You can even hire me under your own brand.
                 </p>
                 <div className="pt-4 border-t border-white/20">
-                  <p className="font-serif-italic text-lg">That’s called white-label. You sell. I work.</p>
+                  <p className="font-serif-italic text-xl font-bold">That's called white-label. You sell. I work.</p>
                 </div>
               </CardContent>
             </Card>
@@ -333,7 +358,7 @@ export default function Home() {
       </section>
 
       {/* Section 6: How I Work */}
-      <section className="py-24 px-6">
+      <section id="how-it-works" className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold tracking-tight text-slate-900">How I work</h2>
@@ -370,7 +395,7 @@ export default function Home() {
       </section>
 
       {/* Section 7: Why Hire Me */}
-      <section className="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 px-6 bg-gradient-to-br from-indigo-950 via-purple-950 to-indigo-950 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[50vw] h-[50vh] bg-indigo-500/20 blur-[120px] rounded-full translate-x-1/4 -translate-y-1/4"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-10">
@@ -434,9 +459,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 px-6 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold">J</div>
-            <span className="font-bold text-lg text-slate-900">JASMYN</span>
+          <div className="flex items-center">
+            <img src="/jasmyn web logo.png" alt="Jasmyn Logo" className="h-10 w-auto object-contain" />
           </div>
           
           <div className="text-center">
