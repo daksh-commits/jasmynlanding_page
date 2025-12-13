@@ -35,7 +35,7 @@ export function Features() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">The Problem</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-serif font-normal text-gray-900 mb-6">
             You lose more customers <br />
             than <span className="italic text-primary">you think</span>.
           </h2>
@@ -58,7 +58,7 @@ export function Features() {
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                 <feature.icon size={24} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}

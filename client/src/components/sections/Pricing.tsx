@@ -52,7 +52,7 @@ export function Pricing() {
           <span className="bg-white/10 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block backdrop-blur-md border border-white/10">
             Who I Work With
           </span>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-serif font-normal mb-6">
             I do my best work for <span className="italic opacity-80">busy pros</span>
           </h2>
         </div>
@@ -72,9 +72,9 @@ export function Pricing() {
               }`}
             >
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-gray-400 mb-2">{plan.name}</h3>
+                <h3 className="text-xl font-medium text-gray-400 mb-2">{plan.name}</h3>
                 <div className="flex items-baseline">
-                  <span className="text-4xl font-serif font-bold text-[#1a1a2e]">{plan.price}</span>
+                  <span className="text-4xl font-serif font-normal text-[#1a1a2e]">{plan.price}</span>
                   <span className="text-gray-400 ml-1">{plan.period}</span>
                 </div>
               </div>
