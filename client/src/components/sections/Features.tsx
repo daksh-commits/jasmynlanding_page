@@ -39,7 +39,7 @@ export function Features() {
             You lose more customers <br />
             than <span className="italic text-primary">you think</span>.
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-xl max-w-2xl mx-auto leading-relaxed">
             Not because your service is bad… but because nobody answered the phone in time.
             People don’t wait. They call the next business. I can fix that.
           </p>
@@ -58,8 +58,8 @@ export function Features() {
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                 <feature.icon size={24} />
               </div>
-              <h3 className="text-xl font-medium text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-medium text-gray-900 mb-3">{feature.title}</h3>
+              <p className="text-base text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>

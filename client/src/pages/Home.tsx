@@ -17,16 +17,16 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
               <div className="p-4">
-                <div className="text-xl font-serif font-normal text-gray-900 mb-2">Your Team</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Gets More Time</div>
+                <div className="text-2xl font-serif font-normal text-gray-900 mb-2">Your Team</div>
+                <div className="text-base text-gray-500 uppercase tracking-wider font-medium">Gets More Time</div>
               </div>
               <div className="p-4">
-                <div className="text-xl font-serif font-normal text-gray-900 mb-2">Your Customers</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Get Faster Service</div>
+                <div className="text-2xl font-serif font-normal text-gray-900 mb-2">Your Customers</div>
+                <div className="text-base text-gray-500 uppercase tracking-wider font-medium">Get Faster Service</div>
               </div>
               <div className="p-4">
-                <div className="text-xl font-serif font-normal text-gray-900 mb-2">Your Business</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider font-medium">Gets More Revenue</div>
+                <div className="text-2xl font-serif font-normal text-gray-900 mb-2">Your Business</div>
+                <div className="text-base text-gray-500 uppercase tracking-wider font-medium">Gets More Revenue</div>
               </div>
             </div>
           </div>
@@ -60,10 +60,10 @@ export default function Home() {
                   transition={{ delay: idx * 0.1 }}
                   className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-start hover:shadow-md transition-shadow"
                 >
-                  <h3 className="text-lg font-medium text-gray-900 mb-6">{item.title}</h3>
+                  <h3 className="text-xl font-medium text-gray-900 mb-6">{item.title}</h3>
                   <div className="w-full bg-gray-50 rounded-xl p-6 border border-dashed border-gray-200">
-                    <div className="text-3xl font-normal text-primary mb-1">{item.metric}</div>
-                    <div className="text-xs text-gray-500">{item.label}</div>
+                    <div className="text-4xl font-normal text-primary mb-1">{item.metric}</div>
+                    <div className="text-sm text-gray-500">{item.label}</div>
                     {/* Fake Chart Line */}
                     <div className="mt-4 h-12 flex items-end space-x-1">
                       {[40, 60, 45, 70, 50, 80, 65, 90].map((h, i) => (
@@ -101,12 +101,12 @@ export default function Home() {
                        <path d="M14.017 21L14.017 18C14.017 16.0547 14.5916 14.3906 15.6586 13.0078C16.8047 11.5469 18.3906 10.7344 20.25 10.4219V7.64062C17.7266 7.95312 15.6875 9.125 14.017 11.1562V4H6.01719V21H14.017ZM31.0172 21L31.0172 18C31.0172 16.0547 31.5916 14.3906 32.6586 13.0078C33.8047 11.5469 35.3906 10.7344 37.25 10.4219V7.64062C34.7266 7.95312 32.6875 9.125 31.0172 11.1562V4H23.0172V21H31.0172Z" transform="translate(-6 -4)"/>
                      </svg>
                    </div>
-                   <p className="text-gray-600 mb-6 italic">"{t.quote}"</p>
+                   <p className="text-gray-600 mb-6 italic text-lg">"{t.quote}"</p>
                    <div className="flex items-center">
                      <div className="w-10 h-10 bg-gray-300 rounded-full mr-3" />
                      <div>
-                       <div className="font-bold text-gray-900 text-sm">{t.name}</div>
-                       <div className="text-xs text-gray-500">{t.role}</div>
+                       <div className="font-bold text-gray-900 text-base">{t.name}</div>
+                       <div className="text-sm text-gray-500">{t.role}</div>
                      </div>
                    </div>
                 </div>

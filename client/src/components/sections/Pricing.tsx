@@ -72,16 +72,16 @@ export function Pricing() {
               }`}
             >
               <div className="mb-8">
-                <h3 className="text-xl font-medium text-gray-400 mb-2">{plan.name}</h3>
+                <h3 className="text-2xl font-medium text-gray-400 mb-2">{plan.name}</h3>
                 <div className="flex items-baseline">
-                  <span className="text-4xl font-serif font-normal text-[#1a1a2e]">{plan.price}</span>
-                  <span className="text-gray-400 ml-1">{plan.period}</span>
+                  <span className="text-5xl font-serif font-normal text-[#1a1a2e]">{plan.price}</span>
+                  <span className="text-gray-400 ml-1 text-lg">{plan.period}</span>
                 </div>
               </div>
 
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-sm text-gray-600">
+                  <li key={i} className="flex items-center text-base text-gray-600">
                     <div className="w-5 h-5 rounded-full bg-[#503AF7]/10 text-[#503AF7] flex items-center justify-center mr-3 flex-shrink-0">
                       <Check size={12} strokeWidth={3} />
                     </div>
