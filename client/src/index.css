@@ -54,7 +54,7 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 10%;
 
-  --primary: 247 91% 60%; /* #503AF7 */
+  --primary: 310 73% 68%; /* #E973DB */
   --primary-foreground: 0 0% 100%;
 
   --secondary: 0 0% 96%;
@@ -64,14 +64,14 @@
   --muted-foreground: 0 0% 45%;
 
   --accent: 0 0% 96%;
-  --accent-foreground: 247 91% 60%;
+  --accent-foreground: 310 73% 68%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
   --border: 0 0% 90%;
   --input: 0 0% 90%;
-  --ring: 247 91% 60%;
+  --ring: 310 73% 68%;
 }
 
 .dark {

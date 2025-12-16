@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImage from "@assets/generated_images/fintech_dashboard_floating_in_clouds.png";
+import heroImage from "@assets/image_1765635756623.png";
 
 export function Hero() {
   return (
@@ -12,9 +12,6 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block py-1 px-4 rounded-full bg-gray-50 text-gray-900 text-xs font-bold uppercase tracking-wider mb-6 border border-gray-100 flex items-center w-fit mx-auto gap-2">
-            <span className="text-[#503AF7]">★</span> JASMYN POV VERSION
-          </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-gray-900 leading-[1.1] mb-6 tracking-tight">
             Hi, I’m <span className="italic font-serif">Jasmyn.</span> <br className="hidden md:block" />
             Your new AI receptionist.
@@ -25,7 +22,7 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Button size="lg" className="rounded-full px-8 h-12 text-base bg-gray-900 hover:bg-gray-800 text-white shadow-none transition-all">
+            <Button size="lg" className="rounded-full px-8 h-12 text-base text-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105" style={{ background: 'linear-gradient(180deg, rgba(219, 108, 241, 1) 30%, rgba(234, 115, 218, 1) 100%)', borderColor: 'rgba(230, 230, 230, 1)' }}>
               Let Me Work For You
             </Button>
             <Button size="lg" variant="ghost" className="rounded-full px-8 h-12 text-base text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all">

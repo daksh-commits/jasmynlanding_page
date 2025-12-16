@@ -34,14 +34,14 @@ export function Features() {
     <section id="features" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary font-bold tracking-wider text-xs uppercase mb-4 block">The Problem</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-normal text-gray-900 mb-6">
+          <span className="text-primary font-bold tracking-wider text-sm uppercase mb-4 block">The Problem</span>
+          <h2 className="text-4xl md:text-6xl font-serif font-normal text-gray-900 mb-6">
             You lose more customers <br />
             than <span className="italic text-primary">you think</span>.
           </h2>
-          <p className="text-gray-600 text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-2xl max-w-2xl mx-auto leading-relaxed">
             Not because your service is bad… but because nobody answered the phone in time.
-            People don’t wait. They call the next business. I can fix that.
+            People don't wait. They call the next business. I can fix that.
           </p>
         </div>
 
@@ -58,8 +58,8 @@ export function Features() {
               <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                 <feature.icon size={24} />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-base text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-3xl font-medium text-gray-900 mb-3" style={{ letterSpacing: '-0.6px', lineHeight: '42px' }}>{feature.title}</h3>
+              <p className="text-lg text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>
