@@ -11,42 +11,52 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  
+
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
-  
+
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
-  
+
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
-  
+
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
-  
+
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
-  
+
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
-  
+
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
-  
+
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
-  
+
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
 }
 
 /* LIGHT MODE - Flat High-Contrast Theme */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 :root {
+  scroll-behavior: smooth;
   --radius: 0.75rem;
 
-  --background: 0 0% 100%; /* Pure White */
-  --foreground: 0 0% 10%; /* Nearly Black */
+  --background: 0 0% 100%;
+  /* Pure White */
+  --foreground: 0 0% 10%;
+  /* Nearly Black */
 
   --card: 0 0% 100%;
   --card-foreground: 0 0% 10%;
@@ -54,7 +64,8 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 10%;
 
-  --primary: 310 73% 68%; /* #E973DB */
+  --primary: 290.1 82.6% 68.4%;
+  /* #DB6CF1 */
   --primary-foreground: 0 0% 100%;
 
   --secondary: 0 0% 96%;
@@ -64,14 +75,14 @@
   --muted-foreground: 0 0% 45%;
 
   --accent: 0 0% 96%;
-  --accent-foreground: 310 73% 68%;
+  --accent-foreground: 290.1 82.6% 68.4%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
   --border: 0 0% 90%;
   --input: 0 0% 90%;
-  --ring: 310 73% 68%;
+  --ring: 290.1 82.6% 68.4%;
 }
 
 .dark {
@@ -84,15 +95,34 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-gray-900 -tracking-[0.05em]; /* Tighten non-italic headings */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-gray-900 -tracking-[0.05em];
+    /* Tighten non-italic headings */
   }
-  
-  h1 .italic, h2 .italic, h3 .italic, h4 .italic, h5 .italic, h6 .italic,
-  h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
-    @apply -tracking-[0.01em]; /* Keep italics more open/standard */
+
+  h1 .italic,
+  h2 .italic,
+  h3 .italic,
+  h4 .italic,
+  h5 .italic,
+  h6 .italic,
+  h1 em,
+  h2 em,
+  h3 em,
+  h4 em,
+  h5 em,
+  h6 em {
+    @apply -tracking-[0.01em];
+    /* Keep italics more open/standard */
   }
 }
