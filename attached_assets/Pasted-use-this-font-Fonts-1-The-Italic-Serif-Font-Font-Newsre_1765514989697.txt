@@ -1,0 +1,143 @@
+use this font: Fonts
+
+1. The Italic Serif Font
+* Font: Newsreader (Italic)
+    * Why: It features the high contrast and sharp serifs of a modern "transitional" typeface. The lowercase "y" has a simple curved tail (unlike Playfair Display, which loops), and the "f" has the characteristic teardrop/ball terminal. It is a very popular Google Font for modern web design, often used to pair with clean sans-serifs.
+    * Alternative: It is very similar to Apple's New York font, but given this looks like a web template, Newsreader is the most likely match.
+2. The Bold Headline Font
+* Font: Inter (Bold or Extra Bold)
+    * Why: This is the quintessential "modern tech" font. Key indicators are the "k" (where the bottom leg meets the slanted arm, not the vertical stem), the double-story "a", and the curved tail on the "t".
+    * Note: The text in the image has tight tracking (letter spacing is squeezed closer together), which is a specific stylistic choice often used with Inter to make headlines look punchy (sometimes called "Inter Tight").
+3. The Body Text
+* Font: Inter (Regular)
+    * Why: It matches the headline font family perfectly. The double-story "g" in "progress" and the clean, tall x-height are standard features of Inter.
+Summary for Recreation: If you are trying to recreate this look, use Newsreader Italic for the accent text and Inter (with -4% or -5% letter spacing on the bold headers) for the rest. Both are available for free via Google Fonts.
+
+and copy: JASMYN AI — HOMEPAGE COPY (JASMYN POV VERSION)
+
+HERO SECTION
+**Hi, I’m Jasmyn.
+Your new AI receptionist. I pick up every call, every time.**
+I don’t get tired.
+ I don’t miss calls.
+ I don’t forget follow-ups.
+I just do my job… perfectly.
+[Let Me Work For You]
+ [Listen to Me in Action]
+
+SECTION 2 — THE PROBLEM (HER POV)
+You lose more customers than you think.
+Not because your service is bad…
+ but because nobody answered the phone in time.
+People don’t wait.
+ They call the next business.
+I can fix that.
+
+SECTION 3 — WHAT I DO FOR YOU
+Here’s what I’m trained to handle:
+• Answer calls instantly
+ • Talk naturally (yes, people think I’m real)
+ • Ask the right questions
+ • Collect caller details
+ • Book appointments in your calendar
+ • Qualify serious leads
+ • Send follow-up texts or emails
+And soon, I’ll be able to:
+ • Run your sales webinars
+ • Present your offer
+ • Answer questions live
+ • Take payments during the presentation
+All on my own.
+
+SECTION 4 — WHO I WORK BEST WITH
+I do my best work for:
+Busy local businesses:
+ Med-spas
+ Home services
+ Salons
+ Dental clinics
+ HVAC
+ Plumbers
+ Towing companies
+ Small hotels
+Sales-focused pros:
+ Realtors
+ Solar agents
+ Insurance professionals
+Agencies:
+ You can even hire me under your own brand.
+ (That’s called white-label. You sell. I work.)
+
+SECTION 5 — WHY I’M DIFFERENT
+I’m not a chatbot.
+ I’m not a call center script.
+ I’m not a “press 1, press 2” robot.
+I’m an AI worker.
+I learn your business.
+ I speak your tone.
+ I follow instructions.
+ I improve over time.
+ I handle your front desk completely.
+Your team gets more time.
+ Your customers get faster service.
+ Your business gets more revenue.
+Everyone wins.
+
+SECTION 6 — HOW I WORK (HER VOICE)
+Someone calls your business.
+ I answer in one second.
+ I greet them politely.
+ I understand what they need.
+ I collect their info.
+ I book the appointment or send details to you.
+ You only talk to serious customers.
+Simple.
+
+SECTION 7 — WHY YOU SHOULD HIRE ME
+Because your business grows when nothing slips through the cracks.
+And I don’t let anything slip.
+• No missed calls
+ • No lost leads
+ • No slow follow-ups
+ • No overwhelmed staff
+ • More appointments
+ • More predictable revenue
+Let me handle the busy work so you can focus on the real work.
+
+SECTION 8 — WHITE LABEL (HER VOICE)
+If you’re an agency, you can introduce me to your clients with your branding.
+Your logo
+ Your pricing
+ Your audience
+ My work
+No development cost.
+ No technical setup.
+ Just plug me into your service offer.
+
+SECTION 9 — CALL TO ACTION
+I’m almost ready for my first official day at work.
+Be one of the first 50 businesses to hire me.
+I’ll take care of your calls.
+ You take care of your customers.
+[Join My Waitlist]
+
+SECTION 10 — THE FUTURE (HER VOICE)
+Today I answer calls.
+ Soon I’ll:
+• Run your webinars
+ • Present your service
+ • Answer objections
+ • Help close sales
+I’m here to replace tasks, not people.
+ And I’ll make your business more efficient than ever.
+
+SECTION 11 — SOCIAL PROOF PLACEHOLDERS
+“She booked 22 appointments for us this week.”
+ “I didn’t even know she was AI.”
+ “We haven’t missed a call in months.”
+More stories coming soon.
+
+SECTION 12 — FOOTER CTA
+Ready when you are.
+[Get Early Access]
+
