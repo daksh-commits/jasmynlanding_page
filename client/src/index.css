@@ -97,7 +97,7 @@ body {
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-background text-foreground leading-relaxed;
   }
 
   h1,
@@ -106,23 +106,44 @@ body {
   h4,
   h5,
   h6 {
-    @apply font-serif text-gray-900 -tracking-[0.05em];
-    /* Tighten non-italic headings */
+    @apply font-serif text-gray-900 tracking-tight;
+  }
+}
+
+@layer utilities {
+
+  /* Fluid Typography Scale */
+  .display-1 {
+    @apply font-serif font-normal leading-[1.1] tracking-tight;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    /* 40px to 80px */
   }
 
-  h1 .italic,
-  h2 .italic,
-  h3 .italic,
-  h4 .italic,
-  h5 .italic,
-  h6 .italic,
-  h1 em,
-  h2 em,
-  h3 em,
-  h4 em,
-  h5 em,
-  h6 em {
-    @apply -tracking-[0.01em];
-    /* Keep italics more open/standard */
+  .display-2 {
+    @apply font-serif font-normal leading-[1.15] tracking-tight;
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    /* 36px to 64px */
+  }
+
+  .heading-3 {
+    @apply font-serif font-normal leading-snug tracking-tight;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    /* 28px to 40px */
+  }
+
+  .text-label {
+    @apply text-primary font-bold tracking-[0.15em] text-xs md:text-sm uppercase mb-4 block;
+  }
+
+  .text-body {
+    @apply text-gray-600 leading-relaxed;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
+    /* 16px to 20px */
+  }
+
+  .text-quote {
+    @apply text-gray-600 italic leading-relaxed;
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+    /* 18px to 24px */
   }
 }

@@ -2,10 +2,20 @@ import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
-import { SmoothScroll } from "@/components/SmoothScroll";
+import { ModalProvider, useModal } from "@/context/ModalContext";
+import { WaitlistModal } from "@/components/modals/WaitlistModal";
+
+function GlobalWaitlistAndRouter() {
+  const { isWaitlistOpen, closeWaitlist } = useModal();
+  return (
+    <>
+      <Router />
+      <WaitlistModal isOpen={isWaitlistOpen} onClose={closeWaitlist} />
+    </>
+  );
+}
 
 function Router() {
   return (
@@ -19,12 +29,10 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <SmoothScroll>
-          <Router />
-        </SmoothScroll>
-      </TooltipProvider>
+      <ModalProvider>
+        <GlobalWaitlistAndRouter />
+      </ModalProvider>
+      <Toaster />
     </QueryClientProvider>
   );
 }
