@@ -39,6 +39,20 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Split large vendor libraries into separate chunks to reduce the main bundle size.
+    rollupOptions: {
+      output: {
+        manualChunks(id: string) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) return 'vendor-react';
+            if (id.includes('@radix-ui') || id.includes('lucide-react')) return 'vendor-ui';
+            if (id.includes('framer-motion') || id.includes('lenis') || id.includes('ogl')) return 'vendor-animations';
+            if (id.includes('recharts') || id.includes('@tanstack')) return 'vendor-charts';
+            return 'vendor';
+          }
+        },
+      },
+    },
   },
   server: {
     host: "0.0.0.0",
