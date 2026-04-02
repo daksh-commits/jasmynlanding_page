@@ -6,28 +6,28 @@ import { useModal } from "@/context/ModalContext";
 
 const plans = [
   {
-    name: "Local Businesses",
-    price: "Service",
+    name: "Ecom Founders",
+    price: "Ecom",
     period: "",
     features: [
-      "Med-spas",
-      "Home services",
-      "Salons",
-      "Dental clinics",
-      "HVAC & Plumbers"
+      "Online store owners & DTC brands",
+      "Dropshippers & product-based businesses",
+      "Instagram & ad management",
+      "Klaviyo email flows",
+      "UGC-style video ads"
     ],
     recommended: false
   },
   {
-    name: "Sales Pros",
-    price: "Sales",
+    name: "Local Businesses",
+    price: "Local",
     period: "",
     features: [
-      "Realtors",
-      "Solar agents",
-      "Insurance professionals",
-      "Lead qualification",
-      "Appointment setting"
+      "Salons, dental clinics, gyms",
+      "Restaurants & contractors",
+      "Real estate agents",
+      "Social media & content",
+      "Local SEO & visibility"
     ],
     recommended: true
   },
@@ -37,10 +37,10 @@ const plans = [
     period: "",
     features: [
       "Your logo & branding",
-      "Your pricing",
+      "Your pricing, my work",
       "No development cost",
       "No technical setup",
-      "Plug & Play"
+      "Recurring revenue model"
     ],
     recommended: false
   }
@@ -55,7 +55,7 @@ export function Pricing() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="display-2 mb-6">
-            I do my best work for <span className="italic text-[#DB6CF1]">busy pros</span>
+            I do my best work for <span className="italic text-[#DB6CF1]">these businesses</span>
           </h2>
         </div>
 

@@ -7,13 +7,13 @@ export function Footer() {
   return (
     <footer className="bg-gray-50 pt-20 pb-10 border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4 block">
               Jasmyn AI
             </Link>
             <p className="text-sm md:text-base text-gray-500 leading-relaxed mb-6">
-              Ready when you are. The AI receptionist that never sleeps.
+              Your AI marketing employee. $200/mo. All from WhatsApp.
             </p>
           </div>
 
@@ -48,9 +48,30 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="heading-3 mb-6">Get Early Access</h4>
+            <h4 className="heading-3 mb-6">Legal</h4>
+            <ul className="space-y-3 text-sm md:text-base text-gray-500">
+              <li>
+                <Link href="/privacy" className="hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-primary transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/cancellation" className="hover:text-primary transition-colors">
+                  Cancellation & Refunds
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="heading-3 mb-6">Get Started</h4>
             <p className="text-sm md:text-base text-gray-500 mb-6 leading-relaxed">
-              Join the future of business automation.
+              $200/mo. No contracts. Cancel anytime.
             </p>
             <div className="flex gap-2">
               <input

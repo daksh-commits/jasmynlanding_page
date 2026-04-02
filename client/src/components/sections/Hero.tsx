@@ -34,11 +34,11 @@ export function Hero() {
         <div>
           <h1 className="display-1 mb-6">
             Hi, I’m <span className="italic font-serif">Jasmyn.</span> <br className="hidden md:block" />
-            Your new AI receptionist.
+            Your new AI marketing employee.
           </h1>
           <p className="text-body max-w-2xl mx-auto mb-10">
-            I pick up every call, every time. I don’t get tired. I don’t miss calls.
-            I don’t forget follow-ups. I just do my job… perfectly.
+            I run your ads, emails, social media, and content.
+            All from WhatsApp. $200/mo.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -52,18 +52,18 @@ export function Hero() {
               onClick={() => setIsAudioOpen(true)}
             >
               <PlayCircle className="mr-2 h-4 w-4" />
-              Listen to Me in Action
+              See What I Can Do
             </Button>
           </div>
 
           <div className="flex justify-center gap-16 mb-20">
             <div className="flex items-center gap-4">
-              <span className="heading-3">0</span>
-              <span className="text-sm text-gray-400 text-left leading-tight">Missed calls<br />guaranteed</span>
+              <span className="heading-3">$200</span>
+              <span className="text-sm text-gray-400 text-left leading-tight">Per month<br />no contracts</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="heading-3">24/7</span>
-              <span className="text-sm text-gray-400 text-left leading-tight">Availability<br />every day</span>
+              <span className="text-sm text-gray-400 text-left leading-tight">Marketing<br />every day</span>
             </div>
           </div>
         </div>

@@ -48,24 +48,24 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
               <div className="p-4 flex flex-col items-center">
-                <div className="heading-3 mb-2">Your Team</div>
+                <div className="heading-3 mb-2">No More DIY</div>
                 <div className="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-[0.15em] font-bold">
                   <AnimatedCheck />
-                  <span>Gets More Time</span>
+                  <span>Marketing at midnight</span>
                 </div>
               </div>
               <div className="p-4 flex flex-col items-center">
-                <div className="heading-3 mb-2">Your Customers</div>
+                <div className="heading-3 mb-2">No More Agencies</div>
                 <div className="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-[0.15em] font-bold">
                   <AnimatedCheck />
-                  <span>Get Faster Service</span>
+                  <span>$3K/mo for PDFs</span>
                 </div>
               </div>
               <div className="p-4 flex flex-col items-center">
-                <div className="heading-3 mb-2">Your Business</div>
+                <div className="heading-3 mb-2">Just Results</div>
                 <div className="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-[0.15em] font-bold">
                   <AnimatedCheck />
-                  <span>Gets More Revenue</span>
+                  <span>More traffic, content & sales</span>
                 </div>
               </div>
             </div>
@@ -80,16 +80,16 @@ export default function Home() {
             <div className="text-center mb-16 px-4">
               <h2 className="display-2">
                 I'm not a chatbot. <br />
-                I'm an <span className="italic text-primary">AI worker</span>.
+                I'm an <span className="italic text-primary">AI employee</span>.
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {[
                 { title: "I learn your business", image: card1, mobileImage: sec1Small },
-                { title: "I speak your tone", image: card2, mobileImage: sec2Small },
-                { title: "I follow instructions", image: card3, mobileImage: sec3Small },
-                { title: "I improve over time", image: card4, mobileImage: sec4Small },
+                { title: "I follow your instructions", image: card2, mobileImage: sec2Small },
+                { title: "I get better over time", image: card3, mobileImage: sec3Small },
+                { title: "I run your entire marketing", image: card4, mobileImage: sec4Small },
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -130,7 +130,6 @@ export default function Home() {
 
         <Pricing />
 
-        {/* Testimonials */}
         <section id="testimonials" className="py-24 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
@@ -141,9 +140,9 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: "Med-Spa Owner", role: "Early Adopter", quote: "She booked 22 appointments for us this week. I didn't even know she was AI." },
-                { name: "Local Service Pro", role: "Beta User", quote: "We haven't missed a call in months. It's like having a receptionist who never sleeps." },
-                { name: "Agency Founder", role: "Partner", quote: "I can white-label this and sell it to my clients. This is a game changer." }
+                { name: "Ecom Founder", role: "DTC Brand", quote: "She grew our Instagram from 400 to 2,800 followers in 6 weeks." },
+                { name: "Online Store Owner", role: "Shopify", quote: "Our abandoned cart flow made $8K in the first month. I didn't touch a thing." },
+                { name: "Agency Founder", role: "Partner", quote: "I haven't opened a marketing tool in 3 months. Jasmyn handles everything." }
               ].map((t, i) => (
                 <div key={i} className="bg-gray-50/50 p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-md transition-all">
                   <div className="mb-6 text-primary/20">
@@ -165,14 +164,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Bottom - Refined "Sound good?" Style with Scroll Reveal & Rolling Button */}
+        {/* CTA Bottom */}
         <section className="pt-8 pb-32 bg-gray-50 text-gray-900 relative z-20">
           {/* Top Curve Separator - Scroll Activated Animation */}
           <ScrollCurve />
           <div className="container mx-auto px-4 relative z-10 text-center">
-            <h2 className="display-2 mb-8">I'm almost ready for my first official day.</h2>
+            <h2 className="display-2 mb-8">I'm ready for my first day at work.</h2>
             <p className="text-body max-w-xl mx-auto mb-10">
-              Be one of the first 50 businesses to hire me. I'll take care of your calls. You take care of your customers.
+              $200/mo. No contracts. Cancel anytime. You text me on WhatsApp. I handle the rest.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
@@ -181,7 +180,7 @@ export default function Home() {
                 style={{ background: 'linear-gradient(180deg, rgba(219, 108, 241, 1) 30%, rgba(234, 115, 218, 1) 100%)', borderColor: 'rgba(230, 230, 230, 1)' }}
                 onClick={openWaitlist}
               >
-                Let Me Work For You
+                Hire Me Now
               </Button></div>
           </div>
         </section>
