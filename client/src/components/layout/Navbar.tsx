@@ -3,10 +3,13 @@ import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoImage from "@assets/generated_images/jasmyn web logo.png";
+import { useModal } from "@/context/ModalContext";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openWaitlist } = useModal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,54 +20,59 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Resources", href: "#resources" },
+    { name: "About Me", href: "#about" },
+    { name: "Work", href: "#features" },
+    { name: "Testimonial", href: "#testimonials" },
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 shadow-sm"
-          : "bg-transparent py-6"
-      }`}
-    >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-serif font-bold text-primary tracking-tight">
-          Catalis
-        </Link>
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-4 px-4 md:pt-6 md:px-6">
+      <div
+        className={`container mx-auto rounded-[100px] transition-all duration-300 ${isScrolled
+          ? "bg-white/80 backdrop-blur-md border border-gray-100 py-4 px-6 shadow-lg"
+          : "bg-white/60 backdrop-blur-sm border border-gray-100/50 py-4 px-6 shadow-sm"
+          }`}
+      >
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center">
+            <img
+              src={logoImage}
+              alt="Jasmyn Logo"
+              className="h-8 w-auto md:h-10 object-contain"
+            />
+          </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-base font-medium text-gray-600 hover:text-primary transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <Button
+              className="rounded-full px-6 text-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              style={{ background: 'linear-gradient(180deg, rgba(219, 108, 241, 1) 30%, rgba(234, 115, 218, 1) 100%)', borderColor: 'rgba(230, 230, 230, 1)' }}
+              onClick={openWaitlist}
             >
-              {link.name}
-            </a>
-          ))}
-        </div>
+              Get Started
+            </Button>
+          </div>
 
-        <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" className="text-gray-600 hover:text-primary">
-            Sign In
-          </Button>
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-            Get Started
-          </Button>
+          {/* Mobile Toggle */}
+          <button
+            className="md:hidden text-gray-600"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-gray-600"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -74,24 +82,29 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
+            className="md:hidden bg-white/95 backdrop-blur-md border border-gray-100 rounded-2xl mx-4 mt-2 shadow-lg overflow-hidden"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <div className="px-6 py-4 flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-base font-medium text-gray-600 hover:text-primary py-2"
+                  className="text-lg font-medium text-gray-600 hover:text-primary py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
               <div className="pt-4 flex flex-col space-y-3">
-                <Button variant="outline" className="w-full justify-center">
-                  Sign In
-                </Button>
-                <Button className="w-full justify-center rounded-full">
+
+                <Button
+                  className="w-full justify-center rounded-full text-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                  style={{ background: 'linear-gradient(180deg, rgba(219, 108, 241, 1) 30%, rgba(234, 115, 218, 1) 100%)', borderColor: 'rgba(230, 230, 230, 1)' }}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    openWaitlist();
+                  }}
+                >
                   Get Started
                 </Button>
               </div>
